@@ -21,10 +21,10 @@
 
   <form id="form">
     <ion-label stacked>Email</ion-label>
-    <app-input type="" ></app-input>
-    <ion-label stacked>Password</ion-label>
-    <app-input type="password" ></app-input>
-    <ion-button   expand="block"  shape="round">
+    <ion-input type="email" name="email"  [(ngModel)]="credentials.email"></ion-input>
+    <ion-label stacked >Password</ion-label>
+    <ion-input type="password"  name="password" [(ngModel)]="credentials.pw"></ion-input>
+    <ion-button   expand="block"  shape="round" (click)="login()">
      Login
     </ion-button>
   </form>
