@@ -1,0 +1,14 @@
+
+
+ionic
+g pag
+e ...
+ionic g service services/auth
+ionic g guard guards/auth
+
+npm i @ionic/storage @auth0/angular-jwt
+
+Add in appModule
+import { IonicStorageModule } from '@ionic/storage-angular';
+
+
