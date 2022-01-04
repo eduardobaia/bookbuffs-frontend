@@ -21,9 +21,9 @@
 
   <form id="form">
     <ion-label stacked>Email</ion-label>
-    <ion-input type="email" name="email"  [(ngModel)]="credentials.email"></ion-input>
+    <ion-input type="email" name="email"  [(ngModel)]="credentials.username"></ion-input>
     <ion-label stacked >Password</ion-label>
-    <ion-input type="password"  name="password" [(ngModel)]="credentials.pw"></ion-input>
+    <ion-input type="password"  name="password" [(ngModel)]="credentials.password"></ion-input>
     <ion-button   expand="block"  shape="round" (click)="login()">
      Login
     </ion-button>

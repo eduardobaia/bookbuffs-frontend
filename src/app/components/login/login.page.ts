@@ -11,8 +11,8 @@ import { AuthService } from 'src/app/services/auth.service';
 export class LoginPage implements OnInit {
 
   credentials = {
-    email:'saimon@devdactic.com',
-    pw:"123"
+    username:'saimon@devdactic.com',
+    password:"123"
   };
   constructor(private authService:AuthService, private alertCtrl: AlertController, private router: Router) { }
 
@@ -21,6 +21,7 @@ export class LoginPage implements OnInit {
 
 
   login() {
+    console.log("login q chego do front"+ this.credentials.username)
     this.authService.login(this.credentials).subscribe(async res => {
       if (res) {
         this.router.navigateByUrl('/home');

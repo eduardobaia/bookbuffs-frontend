@@ -9,7 +9,7 @@ import { AuthService } from '../services/auth.service';
 export class HomePage {
 
   user = null;
-  constructor(private auth: AuthService) {}
+  constructor(private auth: AuthService) {  this.user = this.auth.getUser();}
 
   ionViewWillEnter(){
 
